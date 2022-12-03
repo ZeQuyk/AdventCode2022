@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day1\ZeQuyk.AdventCode2022.Day1.csproj" />
+    <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day2\ZeQuyk.AdventCode2022.Day2.csproj" />
   </ItemGroup>
 
 </Project>

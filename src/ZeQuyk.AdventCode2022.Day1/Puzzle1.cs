@@ -1,4 +1,5 @@
-﻿using Advent2022.Core;
+﻿using System.Linq;
+using Advent2022.Core;
 
 namespace ZeQuyk.AdventCode2022.Day1
 {
