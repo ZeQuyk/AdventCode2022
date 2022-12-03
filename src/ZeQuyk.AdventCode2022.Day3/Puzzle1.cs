@@ -9,7 +9,7 @@ namespace ZeQuyk.AdventCode2022.Day3
         protected override string Solve(string input)
         {
             var lines = input.Split(Environment.NewLine);
-            var sum = lines.Select(x => new RuckSack(x)).Sum(x => x.GetPriority());
+            var sum = lines.Select(line => new RuckSack(line)).Sum(ruckSack => ruckSack.GetPriority());
 
             return sum.ToString();
         }
