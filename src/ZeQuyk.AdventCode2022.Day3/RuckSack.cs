@@ -1,30 +1,24 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
 namespace ZeQuyk.AdventCode2022.Day3
 {
-    public class RuckSack
+    public class RuckSack : PriorityCalculatorBase
     {
-        private const int LowerCaseSubstraction = 96;
-        private const int UpperCaseSubstraction = 38;
-
         public RuckSack(string input)
         {
-            Item1 = input.Substring(0, input.Length / 2);
-            Item2 = input.Substring(input.Length / 2);
+            Value = input;
         }
 
-        protected string Item1 { get; set; }
+        public string Value { get; private set; }
 
-        protected string Item2 { get; set; }
+        protected int Length => Value.Length;
 
-        protected char Department => Item1.FirstOrDefault(x => Item2.Contains(x));
+        protected string Compartment1 => Value.Substring(0, Length / 2);
 
-        public int GetPriority()
-        {
-            var substraction = Department.IsUppercase() ? UpperCaseSubstraction : LowerCaseSubstraction;
+        protected string Compartment2 => Value.Substring(Length / 2);
 
-            return Department - substraction;
-        }
+        protected char Department => Compartment1.FirstOrDefault(x => Compartment2.Contains(x));
+
+        public int GetPriority() => CalculatePriority(Department);
     }
 }
