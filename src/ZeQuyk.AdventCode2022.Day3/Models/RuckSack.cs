@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace ZeQuyk.AdventCode2022.Day3
+namespace ZeQuyk.AdventCode2022.Day3.Models
 {
     public class RuckSack : PriorityCalculatorBase
     {

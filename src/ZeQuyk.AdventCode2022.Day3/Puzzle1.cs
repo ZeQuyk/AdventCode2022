@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Advent2022.Core;
+using ZeQuyk.AdventCode2022.Day3.Models;
 
 namespace ZeQuyk.AdventCode2022.Day3
 {

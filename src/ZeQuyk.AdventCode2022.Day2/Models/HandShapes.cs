@@ -1,4 +1,4 @@
-﻿namespace ZeQuyk.AdventCode2022.Day2
+﻿namespace ZeQuyk.AdventCode2022.Day2.Models
 {
     public enum HandShapes
     {

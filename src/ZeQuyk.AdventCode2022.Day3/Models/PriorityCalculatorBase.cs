@@ -1,4 +1,4 @@
-﻿namespace ZeQuyk.AdventCode2022.Day3
+﻿namespace ZeQuyk.AdventCode2022.Day3.Models
 {
     public abstract class PriorityCalculatorBase
     {
