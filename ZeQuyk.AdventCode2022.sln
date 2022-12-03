@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Console", "src\ZeQuyk.AdventCode2022.Console\ZeQuyk.AdventCode2022.Console.csproj", "{20D7F10A-9D54-4A4B-8777-426774EEEBCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day1", "ZeQuyk.AdventCode2022.Day1\ZeQuyk.AdventCode2022.Day1.csproj", "{67DA24F6-4334-4CD7-A0D0-6AB45D25410C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day1", "src\ZeQuyk.AdventCode2022.Day1\ZeQuyk.AdventCode2022.Day1.csproj", "{67DA24F6-4334-4CD7-A0D0-6AB45D25410C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
