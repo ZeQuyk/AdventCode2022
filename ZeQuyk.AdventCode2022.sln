@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Day1"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day2", "src\ZeQuyk.AdventCode2022.Day2\ZeQuyk.AdventCode2022.Day2.csproj", "{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day3", "src\ZeQuyk.AdventCode2022.Day3\ZeQuyk.AdventCode2022.Day3.csproj", "{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
