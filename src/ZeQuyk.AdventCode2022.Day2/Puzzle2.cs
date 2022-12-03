@@ -21,7 +21,7 @@ namespace ZeQuyk.AdventCode2022.Day2
             return points.ToString();
         }
 
-        private (HandShapes opponent, ExpectedResults expectedResult) ParseLine(string line)
+        private static (HandShapes opponent, ExpectedResults expectedResult) ParseLine(string line)
         {
             var opponent = ParseOpponent(line);
 
