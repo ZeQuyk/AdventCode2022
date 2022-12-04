@@ -17,7 +17,7 @@ namespace ZeQuyk.AdventCode2022.Day4.Models
 
         public bool HaveSameSections() => Elf1.ClearsAssignedSections(Elf2) || Elf2.ClearsAssignedSections(Elf1);
 
-        public bool HaveAnyCommonSections() => Elf1.AssignedSections.Any(x => Elf2.AssignedSections.Contains(x));
+        public bool HaveAnyCommonSections() => Elf1.AssignedSections.Intersect(Elf2.AssignedSections).Any();
         
     }
 }
