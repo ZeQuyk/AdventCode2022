@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Day1", "src\ZeQuyk.AdventCode2022.Day1\ZeQuyk.AdventCode2022.Day1.csproj", "{67DA24F6-4334-4CD7-A0D0-6AB45D25410C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day2", "src\ZeQuyk.AdventCode2022.Day2\ZeQuyk.AdventCode2022.Day2.csproj", "{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Day2", "src\ZeQuyk.AdventCode2022.Day2\ZeQuyk.AdventCode2022.Day2.csproj", "{C6E78BDE-4080-4CDA-8BDC-FD553A907DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day3", "src\ZeQuyk.AdventCode2022.Day3\ZeQuyk.AdventCode2022.Day3.csproj", "{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeQuyk.AdventCode2022.Day3", "src\ZeQuyk.AdventCode2022.Day3\ZeQuyk.AdventCode2022.Day3.csproj", "{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeQuyk.AdventCode2022.Day4", "src\ZeQuyk.AdventCode2022.Day4\ZeQuyk.AdventCode2022.Day4.csproj", "{E7F1A2DB-62F2-4D85-9DED-6E830A64F81D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3FFB92-FBE8-43B7-82EF-6BB0B60ECA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F1A2DB-62F2-4D85-9DED-6E830A64F81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F1A2DB-62F2-4D85-9DED-6E830A64F81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F1A2DB-62F2-4D85-9DED-6E830A64F81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F1A2DB-62F2-4D85-9DED-6E830A64F81D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
