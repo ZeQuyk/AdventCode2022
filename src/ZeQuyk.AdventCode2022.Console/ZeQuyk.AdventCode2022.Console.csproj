@@ -12,6 +12,7 @@
     <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day2\ZeQuyk.AdventCode2022.Day2.csproj" />
     <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day3\ZeQuyk.AdventCode2022.Day3.csproj" />
     <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day4\ZeQuyk.AdventCode2022.Day4.csproj" />
+    <ProjectReference Include="..\ZeQuyk.AdventCode2022.Day5\ZeQuyk.AdventCode2022.Day5.csproj" />
   </ItemGroup>
 
 </Project>
