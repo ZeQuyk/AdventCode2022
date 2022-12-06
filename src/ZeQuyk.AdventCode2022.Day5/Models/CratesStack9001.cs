@@ -4,8 +4,6 @@ namespace ZeQuyk.AdventCode2022.Day5.Models
 {
     public class CratesStack9001 : CratesStack9000
     {
-        private const int RemoveByBatchesOf = 3;
-
         public CratesStack9001()
         {
         }

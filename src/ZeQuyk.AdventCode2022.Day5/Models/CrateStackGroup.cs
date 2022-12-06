@@ -12,30 +12,11 @@ namespace ZeQuyk.AdventCode2022.Day5.Models
 
         public CrateStackGroup(string input)
         {
-            var groups = input.Split($"{Environment.NewLine}{Environment.NewLine}");
-            var stacks = groups.First();
-            var stackLines = stacks.Split(Environment.NewLine).ToList();
-            var stackHeight = stackLines.Count;
-            var numberOfCrates = stackLines.First().Chunk(CrateSpace + 1).Count();
-            var cratesGroups = stackLines.Select(x => new List<string>()).ToList();
-            foreach (var stackLine in stackLines)
-            {
-                var crates = stackLine.Chunk(CrateSpace + 1).ToList();
-                foreach (var crate in crates)
-                {
-                    var crateAsString = new string(crate).Trim();
-                    if (string.IsNullOrEmpty(crateAsString))
-                    {
-                        continue;
-                    }
+            var lineGroups = input.Split($"{Environment.NewLine}{Environment.NewLine}");
+            var stacks = lineGroups.First();
+            Stacks = ParseStacks(stacks);
 
-                    cratesGroups[crates.IndexOf(crate)].Add(crateAsString);
-                }
-            }
-
-            Stacks = cratesGroups.Select(x => new T().Initialize<T>(x)).ToList();
-            
-            var moveLines = groups.Last().Split(Environment.NewLine);
+            var moveLines = lineGroups.Last().Split(Environment.NewLine);
             Moves = moveLines.Select(x => new Move(x)).ToList();
         }
 
@@ -59,10 +40,34 @@ namespace ZeQuyk.AdventCode2022.Day5.Models
             var stringBuilder = new StringBuilder();
             foreach (var crates in Stacks)
             {
-                stringBuilder.Append($"{crates.Crates.Pop()}");
+                stringBuilder.Append($"{crates.Crates.Peek()}");
             }
 
             return stringBuilder.ToString();
+        }
+
+        private List<T> ParseStacks(string stacks)
+        {
+            var stackLines = stacks.Split(Environment.NewLine).ToList();
+            var stackHeight = stackLines.Count;
+            var numberOfCrates = stackLines.First().Chunk(CrateSpace + 1).Count();
+            var cratesGroups = stackLines.Select(x => new List<string>()).ToList();
+            foreach (var stackLine in stackLines)
+            {
+                var crates = stackLine.Chunk(CrateSpace + 1).ToList();
+                foreach (var crate in crates)
+                {
+                    var crateAsString = new string(crate).Trim();
+                    if (string.IsNullOrEmpty(crateAsString))
+                    {
+                        continue;
+                    }
+
+                    cratesGroups[crates.IndexOf(crate)].Add(crateAsString);
+                }
+            }
+
+            return cratesGroups.Select(x => new T().Initialize<T>(x)).ToList();
         }
     }
 }
