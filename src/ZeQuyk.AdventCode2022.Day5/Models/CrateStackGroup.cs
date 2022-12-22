@@ -46,7 +46,7 @@ namespace ZeQuyk.AdventCode2022.Day5.Models
             return stringBuilder.ToString();
         }
 
-        private List<T> ParseStacks(string stacks)
+        private static List<T> ParseStacks(string stacks)
         {
             var stackLines = stacks.Split(Environment.NewLine).ToList();
             var stackHeight = stackLines.Count;
